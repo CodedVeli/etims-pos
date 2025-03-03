@@ -22,7 +22,7 @@ export default function Home() {
         setLoading(true);
         
         // Fetch transactions from backend
-        const response = await fetch(`${process.env.NEXT_PUBLIC_ETIMS_BACKEND_URL || 'http://localhost:5000'}/api/etims/transactions`);
+        const response = await fetch(`${process.env.NEXT_PUBLIC_ETIMS_BACKEND_URL || 'http://localhost:5000' || 'https://backend-etims.vercel.app'}/api/etims/transactions`);
         
         if (!response.ok) {
           throw new Error('Failed to fetch transaction data');

@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server';
 
-const ETIMS_BACKEND_URL = process.env.ETIMS_BACKEND_URL || 'http://localhost:5000';
-
+const ETIMS_BACKEND_URL = process.env.ETIMS_BACKEND_URL || 'https://backend-etims.vercel.app';
+// https://backend-etims.vercel.app
+// http://localhost:5000
 export async function POST(request) {
   try {
     const { items, total } = await request.json();
