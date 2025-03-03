@@ -130,7 +130,7 @@ export default function Home() {
           <div className="bg-white rounded-md shadow-sm p-6 border-l-4 border-blue-500">
             <div className="flex justify-between items-center">
               <div>
-                <p className="text-sm text-gray-500 font-medium">Today's Sales</p>
+                <p className="text-sm text-gray-500 font-medium">Today&apos;s Sales</p>
                 <p className="text-2xl font-bold text-gray-800">{salesStats.today.total.toLocaleString()} KES</p>
               </div>
               <div className="h-12 w-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
